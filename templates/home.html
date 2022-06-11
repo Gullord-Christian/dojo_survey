@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css')}}"/>
+</head>
+<body>
+    <div class="outside">
+    <form action="/result" method="POST">
+        <div class="container">
+            <div>
+                <label for="your_name">Your name : </label>
+                <input type="text" class="form-control" name="your_name" placeholder="" value="">
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="dojo_location">Dojo Location : </label>
+                <select name="dojo_location" class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option selected>Select One</option>
+                    <option value="sanjose">San Jose</option>
+                    <option value="seattle">Seattle</option>
+                    <option value="chicago">Chicago</option>
+                    <option value="remote">Online - Remote</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <div>
+                <label for="status"> Favorite Languge</label>
+                <select class="form-select form-select-sm" name="favorite_language" aria-label=".form-select-sm example">
+                    <option selected>Select One</option>
+                    <option value="Python">Python</option>
+                    <option value="Javascript">Javascript</option>
+                    <option value="HTML/CSS">HTML/CSS</option>
+                    <option value="C#">C#</option>
+                    <option value="Java">Java</option>
+                </select>
+            </div>
+            <br>
+            <br>
+            <label for="status"> Comment (Optional): </label>
+            <div>
+                <div class="field">
+                    <div class="control">
+                        <textarea name="comment_optional" class="textarea has-fixed-size" placeholder=""></textarea>
+                    </div>
+                </div>
+            <br>
+                <button class="button" type="submit">
+                    Submit
+                </button>
+            </div>
+        </form>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.outside {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+}
+.container {
+    height: 400px; 
+    width: 400px; 
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.button {
+    background-color: teal;
+    color: white;
+    height: 30px;
+    width: 100px;
+    margin-left: 210px;
+}
+
+.textarea {
+    resize: none;
+    width: 300px;
+    height: 100px;
+}
